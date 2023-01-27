@@ -1,4 +1,99 @@
+/* head */
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue";
+  font-weight: 500;
+}
+ /* 1040c1da41776d01e05ed86b51080fed1bd2b77d */
+
+.header {
+  height: 64px;
+  background: hsl(0deg, 0%, 98%);
+  color: hsl(0deg, 0%, 41%);
+  display: flex;
+  margin: 0 30px;
+}
+.header__menu {
+  display: none;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.header label {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.header .close {
+  display: none;
+}
+.header .nav {
+  width: 100%;
+}
+.header .nav__ul__left {
+  padding-left: 30px;
+  display: inline-flex;
+  list-style: none;
+}
+.header .nav__ul__left__submenu ul {
+  display: none;
+  list-style: none;
+  padding: 0 15px;
+}
+.header .nav__ul__left__submenu:hover ul {
+  background: hsl(0deg, 0%, 98%);
+  transition: all 0.3s ease;
+  display: block;
+  position: absolute;
+  box-shadow: 2px 10px 34px -4px hsl(0deg, 0%, 41%);
+  border-radius: 10px;
+  padding: 0 15px;
+}
+.header .nav__ul__left__submenu:hover .img-top {
+  display: inline;
+}
+.header .nav__ul__left__submenu:hover .img-down {
+  display: none;
+}
+.header .nav__ul__right {
+  position: absolute;
+  right: 30px;
+  display: inline-flex;
+  list-style: none;
+}
+.header .nav__ul__right__border {
+  border: 1px solid hsl(0deg, 0%, 8%);
+  border-radius: 10px;
+  padding: 0 20px !important;
+  margin-top: 15px;
+}
+.header .nav a {
+  display: block;
+  color: hsl(0deg, 0%, 41%);
+  text-decoration: none;
+  line-height: 32px;
+  font-weight: 700;
+}
+.header .nav a .img-top {
+  display: none;
+}
+.header .nav a .img-down {
+  display: inline;
+}
+.header .nav a .icon {
+  padding-right: 20px;
+}
+.header .nav a.padding-big {
+  padding: 15px 20px;
+}
+.header .nav a.padding-small {
+  padding: 5px 10px;
+}
 
 /*# sourceMappingURL=style.css.map */
 body{
@@ -6,8 +101,10 @@ body{
 }
 
 .body{
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
+  margin-bottom: 100px;
 }
 
 .image-hero-desktop{
@@ -18,8 +115,9 @@ body{
 }
 
 .texts-body{
-  margin-top: 30px;
+  margin-top: 120px;
   margin-left: 150px;
+  margin-right: 120px;
 }
 
 .text-body{
@@ -30,6 +128,7 @@ body{
   font-weight: 500;
   color: hsl(0, 0%, 41%);
   line-height: 25px;
+  padding-bottom: 40px;
 }
 
 .title-body{
@@ -37,4 +136,30 @@ body{
   font-family: 'Epilogue', sans-serif;
   font-weight: 700;
   font-size: 68px;
+  padding-bottom: 40px;
+  color: hsl(0, 0%, 8%);
+}
+
+.button-body{
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  width: 150px;
+  height: 43px;
+  border-radius: 11px;
+  font-size: 16px;
+  margin-bottom: 100px;
+}
+
+.logos{
+  display: flex;
+  gap: 40px;
+}
+
+.logo{
+  width: 80px;
+  height: 22px;
+}
+
+.logo1{
+  width: 60px;
 }
