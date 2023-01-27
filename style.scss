@@ -1,3 +1,105 @@
+//var
+$white: hsl(0, 0%, 98%);
+$gray: hsl(0, 0%, 41%);
+$black: hsl(0, 0%, 8%);
+
+@mixin nav-ul{
+    display: inline-flex;
+    list-style: none;
+}
+
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue';
     font-weight: 500;
+}
+
+.header {
+    height: 64px;
+    background: $white;
+    color: $gray;
+    display: flex;
+    margin: 0 30px;
+    &__menu{
+        display: none;
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+    }
+    label {
+        font-size: 30px;
+        cursor: pointer;
+        display: none;
+    }
+    .close{
+        display: none;
+    }
+    .nav{
+        width: 100%;
+        &__ul__left{
+            padding-left: 30px;
+            @include nav-ul;
+            &__submenu{
+                ul{
+                    display: none;
+                    list-style: none;
+                    padding: 0 15px;
+                }
+                &:hover{
+                    ul {
+                        background: $white;
+                        transition: all 0.3s ease;
+                        display: block;
+                        position: absolute;
+                        box-shadow: 2px 10px 34px -4px $gray;
+                        border-radius: 10px;
+                        padding: 0 15px;
+                    }
+                    .img-top{
+                        display: inline;
+                    }
+                    .img-down{
+                        display: none;
+                    }
+                }
+            }
+        }
+        &__ul__right{
+            position: absolute;
+            right: 30px;
+            @include nav-ul;
+            &__border{
+                border: 1px solid $black;
+                border-radius: 10px;
+                padding: 0 20px !important;
+                margin-top: 15px;
+            }
+        }
+
+        a{
+            display: block;
+            color: $gray;
+            text-decoration: none;
+            line-height: 32px;
+            font-weight: 700;
+            .img-top{
+                display: none;
+            }
+            .img-down{
+                display: inline;
+            }
+            .icon{
+                padding-right: 20px;
+            }
+            &.padding-big{
+                padding: 15px 20px;
+            }
+            &.padding-small{
+                padding: 5px 10px;
+            }
+        }
+    }
 }
