@@ -4,12 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workshop</title>
+    <title>Workshop2</title>
+    <link href='https://fonts.googleapis.com/css?family=Epilogue' rel='stylesheet'>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-
+    <header class="header">
+        <figure class="header__logo">
+            <img src="./images/logo.svg" alt="logo">
+        </figure>
+        <input type="checkbox" class="header__menu" id="btn-menu"/>
+        <label for="btn-menu">
+            <img src="./images/icon-menu.svg" alt="icon-menu">
+        </label> 
+        <nav class="nav">
+            <button type="button" id="menu-close">
+                <img class="close" src="./images/icon-close-menu.svg" alt="icon-close">
+            </button>
+            <ul class="nav__ul__left">
+                <li class="nav__ul__left__submenu">
+                    <a class="padding-big" href="#">Features
+                        <img class="img-down" src="./images/icon-arrow-down.svg" alt="icon-arrow-down">
+                        <img class="img-top" src="./images/icon-arrow-up.svg" alt="icon-arrow-up">
+                    </a>
+                    <ul>
+                        <li>
+                            <a class="padding-small" href="#">
+                                <img class="icon" src="./images/icon-todo.svg" alt="icon-todo">Todo List
+                            </a>
+                        </li>
+                        <li>
+                        <a class="padding-small" href="#">
+                            <img class="icon" src="./images/icon-calendar.svg" alt="icon-calendar">Calendar
+                        </a>
+                        </li>
+                        <li>
+                            <a class="padding-small" href="#">
+                                <img class="icon" src="./images/icon-reminders.svg" alt="icon-reminders">Reminders
+                            </a> 
+                        </li>
+                        <li>
+                            <a class="padding-small" href="#">
+                                <img class="icon" src="./images/icon-planning.svg" alt="icon-planning">Planing
+                            </a>  
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__ul__left__submenu">
+                    <a class="padding-big" href="#">Company
+                        <img class="img-down" src="./images/icon-arrow-down.svg" alt="icon-arrow-down">
+                        <img class="img-up" src="./images/icon-arrow-up.svg" alt="icon-arrow-up">
+                    </a>
+                    <ul>
+                        <li><a class="padding-small" href="#">History</a></li>
+                        <li><a class="padding-small" href="#">Our Team</a></li>
+                        <li><a class="padding-small" href="#">Blog</a></li>
+                    </ul>
+                </li>
+                <li class="nav__ul__left__item"><a class="padding-big" href="#">Careers</a></li>
+                <li class="nav__ul__left__item"><a class="padding-big" href="#">About</a></li>
+            </ul>
+            <ul class="nav__ul__right">
+                <li><a class="padding-big" href="#">Login</a></li>
+                <li><a class="nav__ul__rigth__border" href="#">Register</a></li>
+            </ul>
+        </nav>
     </header>
     <section>
         
