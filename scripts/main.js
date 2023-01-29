@@ -1,7 +1,4 @@
-const imgMenu = document.getElementById("menuOpen");
-const mainMenu = document.getElementById("nav");
-
-imgMenu.addEventListener('click', () => {
-  mainMenu.classList.toggle("mainMenu-show");
-})
-
+const menuClose= document.getElementById('menu-close');
+menuClose.addEventListener('click', function() {
+    document.getElementById('btn-menu').checked = false;
+});
