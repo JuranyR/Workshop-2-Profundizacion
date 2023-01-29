@@ -1,0 +1,12 @@
+/* DESKTOP SCREEN */
+@media (min-width: 1440px) {
+  .menuOpen {
+    visibility: hidden;
+  }
+  
+  .img-hero-mobile {
+    display: none;
+  }
+  
+  
+}
