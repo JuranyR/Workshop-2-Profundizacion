@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue";
+  font-weight: 500;
+}
+
+.header {
+  height: 64px;
+  background: hsl(0deg, 0%, 98%);
+  color: hsl(0deg, 0%, 41%);
+  display: flex;
+  margin: 0 30px;
+}
+.header__menu {
+  display: none;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.header label {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.header .close {
+  display: none;
+}
+.header .nav {
+  width: 100%;
+}
+.header .nav__ul__left {
+  padding-left: 30px;
+  display: inline-flex;
+  list-style: none;
+}
+.header .nav__ul__left__submenu ul {
+  display: none;
+  list-style: none;
+  padding: 0 15px;
+}
+.header .nav__ul__left__submenu:hover ul {
+  background: hsl(0deg, 0%, 98%);
+  transition: all 0.3s ease;
+  display: block;
+  position: absolute;
+  box-shadow: 2px 10px 34px -4px hsl(0deg, 0%, 41%);
+  border-radius: 10px;
+  padding: 0 15px;
+}
+.header .nav__ul__left__submenu:hover .img-top {
+  display: inline;
+}
+.header .nav__ul__left__submenu:hover .img-down {
+  display: none;
+}
+.header .nav__ul__right {
+  position: absolute;
+  right: 30px;
+  display: inline-flex;
+  list-style: none;
+}
+.header .nav__ul__right__border {
+  border: 1px solid hsl(0deg, 0%, 8%);
+  border-radius: 10px;
+  padding: 0 20px !important;
+  margin-top: 15px;
+}
+.header .nav a {
+  display: block;
+  color: hsl(0deg, 0%, 41%);
+  text-decoration: none;
+  line-height: 32px;
+  font-weight: 700;
+}
+.header .nav a .img-top {
+  display: none;
+}
+.header .nav a .img-down {
+  display: inline;
+}
+.header .nav a .icon {
+  padding-right: 20px;
+}
+.header .nav a.padding-big {
+  padding: 15px 20px;
+}
+.header .nav a.padding-small {
+  padding: 5px 10px;
+}
+
+@media (max-width: 1200px) {
+  .header label {
+    display: block;
+    padding-top: 16px;
+    padding-right: 16px;
+    transition: all 0.4s ease;
+    text-align: end;
+    width: 100%;
+  }
+  .header__menu:checked ~ .nav {
+    transform: translateX(0%);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    padding-top: 80px;
+    background: white;
+    box-shadow: 2px 10px 34px -4px hsl(0deg, 0%, 41%);
+  }
+  .header .close {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .header .nav {
+    position: absolute;
+    top: 64px;
+    right: 0;
+    width: 40%;
+    transform: translateX(100%);
+    transition: all 0.3s;
+  }
+  .header .nav__ul__left {
+    flex-direction: column;
+  }
+  .header .nav__ul__left__submenu ul {
+    padding: 0 40px;
+  }
+  .header .nav__ul__left__submenu:hover ul {
+    box-shadow: unset;
+    position: static;
+    padding: 0 40px;
+  }
+  .header .nav__ul__right {
+    display: block;
+    flex-direction: column;
+    position: unset;
+    right: unset;
+    text-align: center;
+  }
+  .header .nav__ul__right__border {
+    margin: 0 30px;
+  }
+}
+@media (max-width: 628px) {
+  .header .nav {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
+body{
+  background-color: #FAFAFA;
+}
+
+.body{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+}
+
+.image-hero-desktop{
+  margin-right: 150px;
+  display: flex;
+  max-width: 600px;
+  height: 600px;
+}
+.contain-img-hero-mobile{
+  display: none;
+}
+.texts-body{
+  margin-top: 120px;
+  margin-left: 150px;
+  margin-right: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-body{
+  display: flex;
+  width: 450px;
+  font-family: 'Epilogue', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: hsl(0, 0%, 41%);
+  line-height: 25px;
+  padding-bottom: 40px;
+}
+
+.title-body{
+  width: 450px;
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 700;
+  font-size: 68px;
+  padding-bottom: 40px;
+  color: hsl(0, 0%, 8%);
+}
+
+.button-body{
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  width: 150px;
+  height: 43px;
+  border-radius: 11px;
+  font-size: 16px;
+  margin-bottom: 100px;
+}
+
+.logos{
+  display: flex;
+  gap: 40px;
+}
+
+.logo{
+  width: 80px;
+  height: 22px;
+}
+
+.logo1{
+  width: 60px;
+}
