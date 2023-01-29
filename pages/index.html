@@ -6,54 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workshop2</title>
     <link href='https://fonts.googleapis.com/css?family=Epilogue' rel='stylesheet'>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/mobile.css">
+    <link rel="stylesheet" href="/styles/desktop.css">
 </head>
 <body>
     <header class="header">
         <figure class="header__logo">
-            <img src="./images/logo.svg" alt="logo">
+            <img src="/img/logo.svg" alt="logo">
         </figure>
+        
+        <label id="imgMenu" for="btn-menu">
+            <img class="imgMenu" id="imgMenu" src="/img/icon-menu.svg" alt="icon-menu">
+        </label>
         <input type="checkbox" class="header__menu" id="btn-menu"/>
-        <label for="btn-menu">
-            <img src="./images/icon-menu.svg" alt="icon-menu">
-        </label> 
-        <nav class="nav">
-            <button type="button" id="menu-close">
-                <img class="close" src="./images/icon-close-menu.svg" alt="icon-close">
-            </button>
-            <ul class="nav__ul__left">
+        
+        <nav id="nav" class="nav">
+            <!-- <button type="button" id="menu-close">
+                <img class="close" src="/img/icon-close-menu.svg" alt="icon-close">
+            </button> -->
+            <ul id="mainMenu" class="nav__ul__left">
                 <li class="nav__ul__left__submenu">
                     <a class="padding-big" href="#">Features
-                        <img class="img-down" src="./images/icon-arrow-down.svg" alt="icon-arrow-down">
-                        <img class="img-top" src="./images/icon-arrow-up.svg" alt="icon-arrow-up">
+                        <img class="img-down" src="/img/icon-arrow-down.svg" alt="icon-arrow-down">
+                        <img class="img-top" src="/img/icon-arrow-up.svg" alt="icon-arrow-up">
                     </a>
                     <ul>
                         <li>
                             <a class="padding-small" href="#">
-                                <img class="icon" src="./images/icon-todo.svg" alt="icon-todo">Todo List
+                                <img class="icon" src="/img/icon-todo.svg" alt="icon-todo">Todo List
                             </a>
                         </li>
                         <li>
                         <a class="padding-small" href="#">
-                            <img class="icon" src="./images/icon-calendar.svg" alt="icon-calendar">Calendar
+                            <img class="icon" src="/img/icon-calendar.svg" alt="icon-calendar">Calendar
                         </a>
                         </li>
                         <li>
                             <a class="padding-small" href="#">
-                                <img class="icon" src="./images/icon-reminders.svg" alt="icon-reminders">Reminders
+                                <img class="icon" src="/img/icon-reminders.svg" alt="icon-reminders">Reminders
                             </a> 
                         </li>
                         <li>
                             <a class="padding-small" href="#">
-                                <img class="icon" src="./images/icon-planning.svg" alt="icon-planning">Planing
+                                <img class="icon" src="/img/icon-planning.svg" alt="icon-planning">Planing
                             </a>  
                         </li>
                     </ul>
                 </li>
                 <li class="nav__ul__left__submenu">
                     <a class="padding-big" href="#">Company
-                        <img class="img-down" src="./images/icon-arrow-down.svg" alt="icon-arrow-down">
-                        <img class="img-top" src="./images/icon-arrow-up.svg" alt="icon-arrow-up">
+                        <img class="img-down" src="/img/icon-arrow-down.svg" alt="icon-arrow-down">
+                        <img class="img-top" src="/img/icon-arrow-up.svg" alt="icon-arrow-up">
                     </a>
                     <ul>
                         <li><a class="padding-small" href="#">History</a></li>
@@ -70,23 +74,26 @@
             </ul>
         </nav>
     </header>
+    <figure class="contain-img-hero-mobile">
+        <img class="img-hero-mobile" src="/img/image-hero-mobile.png" alt="">
+    </figure>
     <section class="body">
         <div class="texts-body">
             <h1 class="title-body">Make remote work</h1>
             <p class="text-body">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
             <button class="button-body">Learn more</button>
             <div class="logos">
-                <img class="logo" src="./images/client-databiz.svg" alt="">
-                <img class="logo1" src="./images/client-audiophile.svg" alt="">
-                <img class="logo" src="./images/client-meet.svg" alt="">
-                <img class="logo" src="./images/client-maker.svg" alt="">
+                <img class="logo" src="/img/client-databiz.svg" alt="">
+                <img class="logo1" src="/img/client-audiophile.svg" alt="">
+                <img class="logo" src="/img/client-meet.svg" alt="">
+                <img class="logo" src="/img/client-maker.svg" alt="">
             </div>
         </div>
             <figure class="image-hero-desktop">
-                <img src="./images/image-hero-desktop.png" alt="">
+                <img src="/img/image-hero-desktop.png" alt="">
             </figure>
     </section>
     
-    <script src="./main.js" type="text/javascript"></script>
+    <script src="/scripts/main.js" type="text/javascript"></script>
 </body>
 </html>
